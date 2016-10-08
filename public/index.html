@@ -7,16 +7,17 @@
   </head>
   <body>
     <div class="container">
+      <h1>Join ___ other women</h1>
       <div class="row">
-        <form class="col s12">
+        <form class="col s12" onsubmit="sendReport()">
           <div class="row">
             <div class="input-field col s6">
-              <input id="first_name" type="text" class="validate">
-              <label for="first_name">First Name</label>
+              <input id="first_name" type="text" class="validate" placeholder="First Name">
+              <label for="first_name"></label>
             </div>
             <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">Last Name</label>
+              <input id="last_name" type="text" class="validate" placeholder="Last Name">
+              <label for="last_name"></label>
             </div>
           </div>
           <div class="row">
@@ -25,11 +26,39 @@
               <label for="email">Email</label>
             </div>
           </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="location" type="text" class="validate">
+              <label for="location">Campus name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="location" type="text" class="validate">
+              <label for="location">Location of offense</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <select class="browser-default">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+            </div>
+          </div>
+          <p>
+            <input type="checkbox" id="test5" />
+            <label for="test5">I'd like to recieve emails</label>
+          </p>
+          <button class="waves-effect waves-light btn" id="sendBtn">Submit</button>
         </form>
       </div>
     </div>
 
 
     <script type="text/javascript" src="materialize-css/dist/js/materialize.js"></script>
+    <script type="text/javascript" src="user.js"></script>
   </body>
 </html>
