@@ -5,7 +5,9 @@ var myFirebaseRef = new Firebase("https://mysafecampus.firebaseio.com/");
 var firstName = document.getElementById('first_name');
 var lastName = document.getElementById('last_name');
 var email = document.getElementById('email');
-var sendBtn = document.getElementById('send-button');
+var sendBtn = document.getElementById('sendBtn');
+var signupSuccess = document.getElementById('signupSuccess');
+var signupError = document.getElementById('signupError');
 
 var onMessageComplete = function(error) {
   sendBtn.disabled = false;
