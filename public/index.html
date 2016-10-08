@@ -59,10 +59,21 @@
       <div class="signupError"></div>
     </div>
 
-    <script type="text/javascript" src="jquery/dist/jquery.js">
-
-    </script>
+    <script type="text/javascript" src="jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="materialize-css/dist/js/materialize.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+
+    <script>
+      var config = {
+        apiKey: "<API_KEY>",
+        authDomain: "mysafecampus.firebaseapp.com",
+        databaseURL: "https://mysafecampus.firebaseio.com",
+        storageBucket: "<BUCKET>.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
+
     <script type="text/javascript" src="/user.js"></script>
   </body>
 </html>
